@@ -8,8 +8,7 @@ import dbRepo from './db/index.js'; // Use Drizzle ORM database
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const PORT = parseInt(process.env.SERVER_PORT || '3000', 10);
-
+const PORT = process.env.PORT || 3000;
 /* ── MIME types for static file serving ── */
 const MIME = {
   '.html': 'text/html',
